@@ -5,7 +5,7 @@ echo -e "\nGenerating target files\n"
 make installclean
 mka target-files-package otatools && echo -e "\nSigning target files\n"
 
-CERT_DIR=/tmp/src/android/vendor/lineage-priv/keys
+CERT_DIR=vendor/lineage-priv/keys
 
 croot
 sign_target_files_apks -o -d $CERT_DIR \
